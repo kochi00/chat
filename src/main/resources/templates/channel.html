@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="http://www.thymeleaf.org" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h1>< Chat System ></h1>
+___________________________
+<h3><p th:text="${login_username}"></p></h3>
+___________________________
+<h2>Channel Select</h2>
+<form action="/select" >
+    <label>Channel name</label>
+    <input name="channel_name" type="text" />
+    <input type="submit" value="Select" />
+</form>
+___________________________
+<h2>Add Channel</h2>
+<form action="/add channel" >
+    <label>Channel name</label>
+    <input name="channel name" type="text" />
+    <label>Description</label>
+    <input name="description" type="text" />
+    <input type="submit" value="Add" />
+    <p th:text="${message}"></p>
+
+</form>
+___________________________
+<h2>Channel　List</h2>
+<form action="/add channel">
+    <table>
+        <tbody>
+        <tr th:each="channelList : ${channelList}">
+            <td th:text="${channelList}"></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+___________________________
+<br>
+<form action="/hello" >
+    <input type="submit" value="Buck" />
+</form>
+</body>
+</html>

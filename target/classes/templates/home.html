@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+</head>
+<body>
+<h1>< Chat System ></h1>
+
+---------------------------
+
+<h2>Sign Up</h2>
+<form action="/signup1">
+    <input type="submit" value="sign up" />
+    <p th:text="${message1}"></p>
+</form>
+
+---------------------------
+
+<h2>Login</h2>
+<form action="/login1" >
+    <input type="submit" value="Login" />
+    <p th:text="${message2}"></p>
+</form>
+</body>
+</html>
